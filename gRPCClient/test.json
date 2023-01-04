@@ -1,0 +1,24 @@
+﻿[
+  {
+    "medical": true,
+    "childdx": 2,
+    "selfharm": true,
+    "sofas": 0,
+    "clinicalstage": 2,
+    "circadian": true,
+    "tripartite": 1,
+    "psychosis": true,
+    "neet": true
+  },
+  {
+    "medical": true,
+    "childdx": 0,
+    "selfharm": true,
+    "sofas": 2,
+    "clinicalstage": 1,
+    "circadian": true,
+    "tripartite": 1,
+    "psychosis": true,
+    "neet": true
+  }
+]

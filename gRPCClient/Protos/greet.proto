@@ -1,0 +1,55 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRPCClient";
+
+package greet;
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply);
+
+  rpc GetHealthData (HealthDataRequest) returns (HealthDataReply);
+    rpc GetHealthDataJsonStringInput (HealthDataRequestJsonString) returns (HealthDataReply);
+
+}
+
+//This message contains the data parameters to request from the server
+message HealthDataRequest {
+	bool medical = 1;
+	bool childdx = 2;
+	bool selfharm = 3;
+	int32 sofas = 4;
+	int32 clinicalstage = 5;
+	bool circadian = 6;
+	int32 tripartite = 7;
+	bool psychosis = 8;
+	bool neet = 9;
+}
+message HealthDataRequestJsonString {
+	string message = 1;
+}
+//This message gets the reply from the server for the health data requested
+message HealthDataReply {
+/*float Constant = 1;    
+    float Up = 2;
+	float Down = 3;
+	float Mean = 4;
+	float StandardDeviation = 5;
+	float Threshold_50 = 6;
+    float Threshold_60 = 7;
+    float Threshold_70 = 8;*/
+	string message=1;
+}
+
+	
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings.
+message HelloReply {
+  string message = 1;
+}
+
